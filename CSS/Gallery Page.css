@@ -1,0 +1,55 @@
+.row-6 {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 20px;
+}
+
+/*image column styling starts here*/
+.column {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+/*Image styling starts here*/
+.column img {
+  max-width: 100%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/*Images float after each other stars here*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*enlarged image container starts here*/
+.container {
+  position: relative;
+  display: none;
+}
+
+/*enlarged image text starts here*/
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/*Button to close enlarged image starts here*/
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}

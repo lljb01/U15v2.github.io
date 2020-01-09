@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0pt;
+
+  background-color: #ff85df;
+}
+
+/*Adds content after the row class*/
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*Apply styling to a group of classes*/
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Calibri", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #ff85df;
+  color: #ff85df;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+.menu li:hover {
+  background-color: #ff85df;
+}
+
+
+/* For desktop: */
+.col-1 {width: 15%; max-height: 200px;}
+.col-2 {width: 70%;}
+.col-3 {width: 15%;}
+.col-4 {width: 25%;}
+.col-5 {width: 50%;}
+.col-6 {width: 25%;}
+.col-7 {width: 100%;}
+.col-8 {width: 50%;}
+.col-9 {width: 100%;}
+.col-10 {width: 100%;}
+.col-11 {width: 70%;}
+.col-12 {width: 30%;}
+.col-13 {width: 100%;}
+
+
+.row-1 {width: 100%;}
+.row-2 {width: 100%;}
+.row-3 {width: 100%;}
+.row-4 {width: 60%;}
+.row-5 {width: 100%;}
+.row-6 {width: 100%;}
+.row-7 {width: 100%;}
+.row-8 {width: 100%;}
+.row-9 {width: 100%;}
+.row-10 {width: 100%;}
+.row-11 {width: 100%;}
+.row-12 {width: 100%;}
+.row-13 {width: 100%;}
+
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
